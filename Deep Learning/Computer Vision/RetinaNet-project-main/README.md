@@ -2,7 +2,7 @@
 
 
 Keras implenmentation of RetinaNet. \
-![alt text](data/grand.png)
+![](data/grand.png)
 
 
 # Retinanet 
