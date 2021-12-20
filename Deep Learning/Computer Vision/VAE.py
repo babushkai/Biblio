@@ -1,6 +1,5 @@
 #@title Import { display-mode: "form" }
 
-
 import numpy as np
 
 import tensorflow.compat.v2 as tf
@@ -8,7 +7,6 @@ tf.enable_v2_behavior()
 
 import tensorflow_datasets as tfds
 import tensorflow_probability as tfp
-
 
 tfk = tf.keras
 tfkl = tf.keras.layers
@@ -38,6 +36,11 @@ input_shape = datasets_info.features['image'].shape
 encoded_size = 16
 base_depth = 32
 
+# Independent is used to regard a collection of independent, non-identical distributions as a single random variable
+# For example, the Independent distribution composed of a collection of Bernoulli distributions might define a distribution over an image (where each Bernoulli is a distribution over each pixel).
+
+# reinterpreted_batch_ndims parameter controls the number of batch dims which are absorbed as event dims
+# Turn batch shape into event shape
 prior = tfd.Independent(tfd.Normal(loc=tf.zeros(encoded_size), scale=1),
                         reinterpreted_batch_ndims=1)
 
