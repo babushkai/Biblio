@@ -20,3 +20,5 @@ def maxSubArray(nums):
         maxSum = max(curElem, maxSum+curElem)
         return max(prevSum,maxSum)
     return reduce(kadanes, nums,-10000)
+
+#Resource: https://medium.com/@rsinghal757/kadanes-algorithm-dynamic-programming-how-and-why-does-it-work-3fd8849ed73d
