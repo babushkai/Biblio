@@ -1,3 +1,26 @@
+## Data Structure
+
+### Maps/Dictionaries
+[phonebook](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/phonebook.py) \
+[find sum](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/findsum.py)
+
+### Linked Lists
+
+### Trees
+
+### Stacks & Queues
+
+### Heaps
+
+### Graphs
+
+### Runtime Analysis
+
+### Searching & Sorting
+[merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py)
+
+### Recursion & DP
+
 ### Big O
 
 1. Different steps get added
