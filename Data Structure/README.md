@@ -37,5 +37,5 @@ function something(){
 3. Different inputs -> different variables
 4. Drop non-dominant term
 
-Video: https://www.youtube.com/watch?v=v4cd1O4zkGw&ab_channel=HackerRank
+Video: https://www.youtube.com/watch?v=v4cd1O4zkGw&ab_channel=HackerRank \
 Cheat Sheet: https://www.bigocheatsheet.com/
