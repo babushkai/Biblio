@@ -8,8 +8,8 @@
 [linked list](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/linked_list.py)
 
 ### Trees
-[binary tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_tree.py)
-[is same tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/is_sametree.py)
+[binary tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_tree.py) \
+[is same tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/is_sametree.py) \
 [The trie]()
 
 ### Stacks & Queues
