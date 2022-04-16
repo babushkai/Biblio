@@ -94,8 +94,18 @@ class BinaryTree:
             else:
                 self.value = self.right_child.find_minimum_value()
                 self.right_child.remove_node(self.value, self)
-
             return True
+
+    def clear_node(self):
+        self.value = None
+        self.left_child = None
+        self.right_child = None
+
+    def find_minimum_value(self):
+    if self.left_child:
+        return self.left_child.find_minimum_value()
+    else:
+        return self.value
 
 class BinarySearchTree:
     def __init__(self, value):
