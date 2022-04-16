@@ -15,7 +15,7 @@
 ### Stacks & Queues
 
 ### Heaps
-[priority queue]()
+[priority queue](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/priority_queue.py)
 ### Graphs
 
 ### Runtime Analysis
