@@ -7,6 +7,7 @@
 ### Linked Lists
 [linked list](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/linked_list.py)
 ### Trees
+[binary tree]()
 
 ### Stacks & Queues
 
