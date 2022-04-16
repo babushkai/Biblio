@@ -1,3 +1,4 @@
+# https://www.freecodecamp.org/news/all-you-need-to-know-about-tree-data-structures-bceacb85490c/
 class BinaryTree:
     def __init__(self, value):
         self.value = value
