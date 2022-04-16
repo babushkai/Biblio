@@ -5,7 +5,7 @@
 [find sum](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/findsum.py)
 
 ### Linked Lists
-[linked_list.py]()
+[linked_list.py](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/linked_list.py)
 ### Trees
 
 ### Stacks & Queues
