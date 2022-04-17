@@ -13,9 +13,11 @@
 [The trie]()
 
 ### Stacks & Queues
+[valid parentheses](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/valid_parentheses.py)
 
 ### Heaps
 [priority queue](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/priority_queue.py)
+[heap.py](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/heap.py)
 ### Graphs
 
 ### Runtime Analysis
