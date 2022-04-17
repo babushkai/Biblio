@@ -24,9 +24,11 @@
 ### Runtime Analysis
 
 ### Searching & Sorting
-[merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py)
+[merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py) \
+[binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py)
 
 ### Recursion & DP
+
 
 ### Big O
 
