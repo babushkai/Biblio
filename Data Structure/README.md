@@ -28,7 +28,7 @@
 [binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py)
 
 ### Recursion & DP
-
+[greatest common divisor](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/great_common_divisor.py)
 
 ### Big O
 
