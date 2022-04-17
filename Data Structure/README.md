@@ -25,7 +25,8 @@
 
 ### Searching & Sorting
 [merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py) \
-[binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py)
+[binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py) \
+[swap sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/sort_swap.py)
 
 ### Recursion & DP
 [greatest common divisor](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/great_common_divisor.py)
