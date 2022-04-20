@@ -24,6 +24,7 @@ https://en.wikipedia.org/wiki/Data_structure
 [heap](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/heap.py)
 
 ### Graphs
+[depth first search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/depth_first_search.py)
 
 ### Runtime Analysis
 
