@@ -14,7 +14,7 @@ https://en.wikipedia.org/wiki/Data_structure
 ### Trees
 [binary tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_tree.py) \
 [is same tree](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/is_sametree.py) \
-[The trie]()
+[trie]()
 
 ### Stacks & Queues
 [stack](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/stack.py)
