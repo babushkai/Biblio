@@ -7,11 +7,11 @@ class Database:
         print(self.name)
     
     def get_table(self):
-        query = func(self.name)
-        return query
+        fetch = func(self.name)
+        return fetch
 
 # Decouple the responsibility
 class QueryDatabase:
     def get_table(self):
-        query = func(self.name)
-        return query
+        fetch = func(self.name)
+        return fetch
