@@ -33,7 +33,7 @@ https://en.wikipedia.org/wiki/Data_structure
 [merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py) \
 [binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py) \
 [swap sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/sort_swap.py)
-!c[](https://d18l82el6cdm1i.cloudfront.net/uploads/uv9rgMfetq-heapsort-example.gif0)
+![](https://d18l82el6cdm1i.cloudfront.net/uploads/uv9rgMfetq-heapsort-example.gif0)
 
 ### Recursion & DP
 [greatest common divisor](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/great_common_divisor.py)
