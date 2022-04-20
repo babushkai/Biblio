@@ -30,11 +30,22 @@ https://en.wikipedia.org/wiki/Data_structure
 ### Runtime Analysis
 
 ### Searching & Sorting
+[quick sort]()
+
+![](https://upload.wikimedia.org/wikipedia/commons/9/9c/Quicksort-example.gif)
+
 [merge sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/merge_sort.py) \
-[binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py) \
+![](https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif)
+
+[binary search](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/binary_search.py) 
+
 [swap sort](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/sort_swap.py)
 
+[heap sort]() \
 ![](https://d18l82el6cdm1i.cloudfront.net/uploads/uv9rgMfetq-heapsort-example.gif)
+
+[counting sort]() \
+![](https://d18l82el6cdm1i.cloudfront.net/uploads/hrUDdYC7OH-countingsort.gif)
 
 ### Recursion & DP
 [greatest common divisor](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/great_common_divisor.py)
