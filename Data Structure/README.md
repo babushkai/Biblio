@@ -17,6 +17,7 @@ https://en.wikipedia.org/wiki/Data_structure
 [The trie]()
 
 ### Stacks & Queues
+[stack](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/stack.py)
 [valid parentheses](https://github.com/kwdaisuke/Biblio/blob/main/Data%20Structure/valid_parentheses.py)
 
 ### Heaps
