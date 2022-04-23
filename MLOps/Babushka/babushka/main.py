@@ -43,4 +43,5 @@ def trainer():
 
 @app.command()
 def load_artifacts():
+    model = models.load_model()
     pass
