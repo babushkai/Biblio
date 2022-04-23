@@ -33,5 +33,18 @@ def response():
     
     return wrap
 
+@response
 def _index(request: Request):
     return pass
+
+@response
+def predict():
+    pass
+
+@response
+def _params():
+    pass
+
+@response
+def peformance():
+    pass
