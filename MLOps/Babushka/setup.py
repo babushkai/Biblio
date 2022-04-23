@@ -13,4 +13,10 @@ setup(name="dk",
     license = "MIT", 
     description = "test", 
     author = "Daisuke Kuwabara", 
-    install_requires = test)
+    install_requires = test,
+    entry_point = {
+        "console_scripts": [
+            "run" = "babushuka.main:app",
+        ],
+    },
+    )
