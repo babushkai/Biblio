@@ -20,7 +20,7 @@ from optuna.integration.mlflow import MLflowCallback
 
 from config import config
 from config.config import logger
-
+from orchestrator import dag1
 from babushka import data, models, predict, train, utils 
 
 # Ignore warning
@@ -32,6 +32,10 @@ app = typer.Typer()
 @app.command()
 def download_auxiliary_data():
     print("test")
+
+@app.command()
+def trigger_orchestrator():
+    pass
 
 @app.command()
 def compute_feature():

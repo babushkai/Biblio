@@ -30,10 +30,8 @@ def data():
     Workflows to validate data and create features.
     """
 
-    # Extract data from DWH, blob storage, etc.
+    # Extract data from various sources: Streaming data or ETL data
     extract_data = BashOperator(
-        task_id="extract_data",
-        bash_command=f"cd {config.BASE_DIR} && dvc pull",
     )
 
     # Validate data
