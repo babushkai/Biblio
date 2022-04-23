@@ -7,6 +7,7 @@ from great_expectations_provider.operators.great_expectations import (
 from airflow.decorators import dag
 from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python import BranchPythonOperator, PythonOperator
+from airflow.providers.google.cloud.operators.dataflow import DataflowTemplatedJobStartOperator
 from airflow.utils.dates import days_ago
 from app import cli, config
 
@@ -31,8 +32,18 @@ def data():
     """
 
     # Extract data from various sources: Streaming data or ETL data
-    extract_data = BashOperator(
-    )
+    # extract_data =DataflowTemplatedJobStartOperator(
+    #     task_id="dataflow_kafka_to_gcs",
+    #     template="gs://dataflow_templates/latest/flex/Kafka_to_GCS",
+    #     parameters={
+    #         "outputTableSpec":BIGQUERY_TABLE,
+    #         "inputTopics": KAFKA_TOPICS,
+    #         "javascriptTextTransformGcsPath": PATH_TO_JAVASCRIPT_UDF_FILE,
+    #         "javascriptTextTransformFunctionName": JAVASCRIPT_FUNCTION,
+    #         "bootstrapServers": KAFKA_SERVER_ADDRESSES
+    #         }
+    # )
+    
 
     # Validate data
     validate_projects = GreatExpectationsOperator(

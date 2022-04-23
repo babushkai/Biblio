@@ -1,3 +1,3 @@
 # Babushka
 
-GCP Adapted Framework
+AWS Adapted Framework
