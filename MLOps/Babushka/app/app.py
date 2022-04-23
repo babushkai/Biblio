@@ -34,10 +34,6 @@ def response():
     return wrap
 
 @response
-def _index(request: Request):
-    return pass
-
-@response
 def predict():
     pass
 
