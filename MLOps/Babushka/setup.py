@@ -16,7 +16,7 @@ setup(name="dk",
     install_requires = test,
     entry_points = {
         "console_scripts": [
-            "babushuka" = "babushka.main:app",
+            "babushuka = babushka.main:app",
         ],
     },
     )
