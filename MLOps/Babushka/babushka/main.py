@@ -29,7 +29,7 @@ app = typer.Typer()
 
 @app.command()
 def download_auxiliary_data():
-    pass
+    print("test")
 
 @app.command()
 def compute_feature():
