@@ -14,7 +14,7 @@ setup(name="dk",
     description = "test", 
     author = "Daisuke Kuwabara", 
     install_requires = test,
-    entry_point = {
+    entry_points = {
         "console_scripts": [
             "babushuka" = "babushuka.main:app",
         ],
