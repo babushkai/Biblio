@@ -35,11 +35,22 @@ def download_auxiliary_data():
 
 @app.command()
 def trigger_orchestrator():
-    pass
+    
 
 @app.command()
-def compute_feature():
-    pass
+def compute_features(params_fp: Path = Path(config.CONFIG_DIR, "params.json"),) -> None:
+    """Compute and save features for training.
+    Args:
+        params_fp (Path, optional): Location of parameters (just using num_samples,
+                                    num_epochs, etc.) to use for training.
+                                    Defaults to `config/params.json`.
+    """
+    # Parameters
+    params = Namespace(**utils.load_dict(filepath=params_fp))
+
+    # Compute features
+    data.compute_features(params=params)
+    logger.info("✅ Computed features!")
 
 @app.command()
 def trainer():

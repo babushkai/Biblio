@@ -1,8 +1,7 @@
 from pathlib import Path
 
 from great_expectations_provider.operators.great_expectations import (
-    GreatExpectationsOperator,
-)
+    GreatExpectationsOperator,)
 
 from airflow.decorators import dag
 from airflow.operators.bash_operator import BashOperator
@@ -14,8 +13,7 @@ from app import cli, config
 # Default DAG args
 default_args = {
     "owner": "airflow",
-    "catch_up": False,
-}
+    "catch_up": False,}
 
 
 @dag(
@@ -44,20 +42,29 @@ def data():
     #         }
     # )
     
+    extract_data = DataflowTemplatedJobStartOperator{
+        task_id="topic_to_gcs",
+        template="gs://dataflow-templates/latest/Cloud_PubSub_to_GCS_Text",
+        parameters = {
+            "inputTopic": 
+            "outputDirectory": ""
+            "outputFilenamePrefix": "output-"
+            "outputFilenameSuffix": ".txt"}}
+    
 
     # Validate data
-    validate_projects = GreatExpectationsOperator(
-        task_id="validate_projects",
-        checkpoint_name="projects",
-        data_context_root_dir="great_expectations",
-        fail_task_on_validation_failure=True,
-    )
-    validate_tags = GreatExpectationsOperator(
-        task_id="validate_tags",
-        checkpoint_name="tags",
-        data_context_root_dir="great_expectations",
-        fail_task_on_validation_failure=True,
-    )
+    # validate_projects = GreatExpectationsOperator(
+    #     task_id="validate_projects",
+    #     checkpoint_name="projects",
+    #     data_context_root_dir="great_expectations",
+    #     fail_task_on_validation_failure=True,
+    # )
+    # validate_tags = GreatExpectationsOperator(
+    #     task_id="validate_tags",
+    #     checkpoint_name="tags",
+    #     data_context_root_dir="great_expectations",
+    #     fail_task_on_validation_failure=True,
+    # )
 
     # Compute features
     compute_features = PythonOperator(
@@ -74,7 +81,9 @@ def data():
     )
 
     # Task relationships
-    extract_data >> [validate_projects, validate_tags] >> compute_features >> cache
+    extract_data >> compute_features >> cache
+    #[validate_projects, validate_tags] >> 
+    
 
 
 def _evaluate_model():
