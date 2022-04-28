@@ -8,7 +8,7 @@ from airflow.operators.bash_operator import BashOperator
 from airflow.operators.python import BranchPythonOperator, PythonOperator
 from airflow.providers.google.cloud.operators.dataflow import DataflowTemplatedJobStartOperator
 from airflow.utils.dates import days_ago
-from app import cli, config
+#from app import cli, config
 
 # Default DAG args
 default_args = {
