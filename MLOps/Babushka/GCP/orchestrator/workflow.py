@@ -68,23 +68,23 @@ def data():
     # )
 
     # Compute features
-    compute_features = PythonOperator(
-        task_id="compute_features",
-        python_callable=cli.compute_features,
-        op_kwargs={"params_fp": Path(config.CONFIG_DIR, "params.json")},
-    )
+    # compute_features = PythonOperator(
+    #     task_id="compute_features",
+    #     python_callable=cli.compute_features,
+    #     op_kwargs={"params_fp": Path(config.CONFIG_DIR, "params.json")},
+    # )
 
-    # Cache (feature store, database, warehouse, etc.)
-    END_TS = ""
-    cache = BashOperator(
-        task_id="cache_to_feature_store",
-        bash_command=f"cd {config.BASE_DIR}/features && feast materialize-incremental {END_TS}",
-    )
+    # # Cache (feature store, database, warehouse, etc.)
+    # END_TS = ""
+    # cache = BashOperator(
+    #     task_id="cache_to_feature_store",
+    #     bash_command=f"cd {config.BASE_DIR}/features && feast materialize-incremental {END_TS}",
+    # )
 
-    # Task relationships
-    extract_data >> compute_features >> cache
+    # # Task relationships
+    # extract_data >> compute_features >> cache
     #[validate_projects, validate_tags] >> 
-    
+    extract_data
 
 
 def _evaluate_model():
