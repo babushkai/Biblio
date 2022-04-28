@@ -47,9 +47,9 @@ def data():
         task_id="topic_to_gcs",
         template="gs://dataflow-templates/latest/Cloud_PubSub_to_GCS_Text",
         parameters = {
-            "inputTopic":  "projects//topics/<topic-name>."
-            "outputDirectory": "gs://ml"
-            "outputFilenamePrefix": "output-"
+            "inputTopic":  "projects//topics/<topic-name>.",
+            "outputDirectory": "gs://ml",
+            "outputFilenamePrefix": "output-",
             "outputFilenameSuffix": ".txt"})
     
 
