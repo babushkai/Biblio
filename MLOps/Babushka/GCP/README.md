@@ -1,3 +1,0 @@
-# Babushka
-
-GCP Adapted Framework
