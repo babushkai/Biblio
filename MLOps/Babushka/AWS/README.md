@@ -1,3 +1,0 @@
-# Babushka
-
-AWS Adapted Framework
