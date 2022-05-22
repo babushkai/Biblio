@@ -1,3 +1,4 @@
+--- https://www.mycompiler.io/new/sql
 -- create a table
 CREATE TABLE test_groups (
   name VARCHAR(40) NOT NULL,
