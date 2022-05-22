@@ -12,7 +12,8 @@ CREATE TABLE test_cases (
     
 -- insert some values
 INSERT INTO test_groups 
-VALUES ('performance', 15),
+VALUES 
+('performance', 15),
 ('corner case', 10),
 ('numerical stability', 20),
 ('memory usage', 10);
