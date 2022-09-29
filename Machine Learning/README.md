@@ -35,6 +35,7 @@ def get_data_splits(X, y, train_size=0.7):
 ```
 
 5. Setup
+```python
 set_seeds()
 df = pd.read_csv("sample.csv")
 df = df.sample(frac=1).reset_index(drop=True) # shuffle
@@ -42,6 +43,7 @@ df = preprocess(df, lower=True, stem=False, min_freq=min_freq)
 label_encoder = LabelEncoder().fit(df.tag)
 X_train, X_val, X_test, y_train, y_val, y_test = \
     get_data_splits(X=df.text.to_numpy(), y=label_encoder.encode(df.tag))
+```
 
 6. Evaluaton
 ```python
