@@ -105,4 +105,3 @@ class Heap(object):
         left_child_index = 2 * index + 1
         if left_child_index > self.__last_index:
             return None, None
-        r
