@@ -1,0 +1,1 @@
+#https://codelabs.developers.google.com/vertex-image-deploy?hl=ja&authuser=1#0
