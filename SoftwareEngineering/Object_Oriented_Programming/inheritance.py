@@ -20,7 +20,7 @@ class Paris(Country):
         super.__init__(nam)
         self.longitude = longitude
         self.latitude = latitude     
-    
+
 class Moscow(Country):
     def __init__(self,  longitude, latitude, name):
         super.__init__(nam)

@@ -13,11 +13,10 @@ High-level components depending on low-level components to function.
 class Database:
     def __init__(self, name):
         self.name = name
-        
-        
+
     def connection_name(self):
         print(self.name)
-    
+
     def get_table(self):
         fetch = func(self.name)
         return fetch
@@ -38,7 +37,7 @@ class Structured(Database):
 class Unstructured:
     def __init__(self, database: Database):
         self.database = database
-    
+
 
 """
 High-level modules should not depend on low-level level modules. It should depend upon its abstraction.
