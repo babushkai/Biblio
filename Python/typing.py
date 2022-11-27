@@ -1,4 +1,4 @@
-from typing import List, Dict, Mapping, Any, Optional
+from typing import List, Dict, Mapping, Any, Optional, Union
 
 Mapping[str, Any] = None 
 Optional[] = None
