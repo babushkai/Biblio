@@ -39,7 +39,7 @@ ax.ticklabel_format(style='sci', axis='z', scilimits=(0, 0))
 
 
 #Coefficient of correlation
-student_data_math.std() / student_data_math.mean() 
+print(student_data_math.std() / student_data_math.mean())
 
 # 大数の法則
 
@@ -79,7 +79,7 @@ for df, c in zip([ (6, 7), (10, 10), (20, 25)], 'bgr'):
 # Gaussian
 sns.distplot(df["texture_mean"], fit=norm)
 (mu, sigma) = norm.fit(df['texture_mean'])
-print( '\n mu = {:.2f} and sigma = {:.2f}\n'.format(mu, sigma))
+print( "\n mu = {:.2f} and sigma = {:.2f}\n".format(mu, sigma))
 plt.legend(['Normal dist. ($\mu=$ {:.2f} and $\sigma=$ {:.2f} )'.format(mu, sigma)],
             loc='best')
 plt.ylabel('Frequency')
