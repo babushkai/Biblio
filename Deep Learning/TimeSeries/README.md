@@ -2,6 +2,8 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kwdaisuke/Biblio/main?labpath=Deep%2520Learning%2FTimeSeries)
 
+Prophet Facebook
+
 http://www.mi.u-tokyo.ac.jp/consortium2/pdf/4-4_literacy_level_note.pdf 
 
 https://machinelearningmastery.com/decompose-time-series-data-trend-seasonality
