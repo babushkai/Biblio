@@ -1,0 +1,41 @@
+# Heap / Priority Queue
+
+## Explanation
+
+A heap is a specialized tree-based data structure that satisfies the heap property: if P is a parent node of C, then the key (the value) of P is either greater than or equal to (in a max heap) or less than or equal to (in a min heap) the key of C. A priority queue is an abstract data type that operates similar to a regular queue or stack data structure, but where additionally, each element has a "priority" associated with it.
+
+## Example Problems
+
+- **Find Kth Largest Element:** Use a min heap to keep track of the `k` largest elements seen so far.
+- **Merge K Sorted Lists:** Use a min heap to efficiently find the next smallest element among the heads of the lists.
+
+## Time Complexity
+
+- The time complexity to insert an element in a heap is O(log n), and to extract the minimum/maximum is also O(log n), where n is the number of elements in the heap.
+- Building a heap from an array of elements has a time complexity of O(n).
+
+## Space Complexity
+
+- The space complexity of a heap is O(n) to store n elements.
+
+## Implementation
+
+```python
+import heapq
+
+# Python implementation using heapq
+
+def find_kth_largest(nums, k):
+    # Create a min heap with the first k elements. The smallest element is at the root.
+    min_heap = nums[:k]
+    heapq.heapify(min_heap)
+
+    # For the rest of the elements, if an element is larger than the root (smallest element),
+    # pop the root and insert the new element.
+    for num in nums[k:]:
+        if num > min_heap[0]:
+            heapq.heappop(min_heap)
+            heapq.heappush(min_heap, num)
+    
+    # The root of the heap is the kth largest element
+    return min_heap[0]
